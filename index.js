@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
 // mongoose url 
-const CONNECTION_URL = 'mongodb+srv://yairtr74:completeblog@cluster0.znd5coc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const CONNECTION_URL = 'mongodb+srv://memory_project:memory_project@cluster0.znd5coc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 const PORT = process.env.PORT || 5000;
 
