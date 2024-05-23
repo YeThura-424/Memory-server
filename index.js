@@ -7,12 +7,13 @@ import cors from "cors";
 import postRoute from './routes/posts.js';
 const app = express();
 
-//routers declarization
-app.use('/posts', postRoute); // first param is prefix for post route and sceond is the post route;
 
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
+
+//routers declarization
+app.use('/posts', postRoute); // first param is prefix for post route and sceond is the post route;
 
 // mongoose url 
 const CONNECTION_URL = 'mongodb+srv://memory_project:memory_project@cluster0.znd5coc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
